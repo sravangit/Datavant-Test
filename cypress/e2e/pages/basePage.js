@@ -34,27 +34,12 @@ class BasePage {
     }
 
 
-
-    // getElementText(selector, useContains = false){
-    //     if(useContains){
-    //         return cy.contains(useContains).getElementText(text);
-
-    //     } else {
-    //         return cy.get(selector).getElementText(text);
-    //     }
-    // }
-
     verifyTextVisible(selector, text){
         
          cy.get(selector).should('contain.text', text);
 
     }
 
-    // verifyInputText(selector, text){
-
-    //     cy.get(selector).should('have.to', text)
-
-    // }
 
 }
 

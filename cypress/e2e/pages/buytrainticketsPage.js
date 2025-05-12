@@ -1,6 +1,5 @@
 /// <reference types="cypress" />
 import basepage from "./basepage";
-import onlineticketofficepage from "./onlineticketofficepage"
 
 class BuyTrainTicketsPage{
 
@@ -59,17 +58,6 @@ class BuyTrainTicketsPage{
 
     }
 
-    // enteredFromField(text){
-    //     var fromFieldSelector = "input[name='textBoxPartida']"
-    //     basepage.verifyInputText(fromFieldSelector, text)
-
-    // }
-
-    // enteredToField(text){
-    //     var fromFieldSelector = "input[name='textBoxChegada']"
-    //     basepage.verifyInputText(fromFieldSelector, text)
-
-    // }
     
 }
 
