@@ -1,2 +1,2 @@
-The project is created using Cypress with Cucumber BDD framework
-Command for running the test: npm run chrome
+- The project is created using Cypress with Cucumber BDD framework
+- Command for running the test: npm run chrome
