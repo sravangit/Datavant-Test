@@ -1,0 +1,99 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Booking Train tickets feature",
+    "line": 1,
+    "id": "booking-train-tickets-feature",
+    "tags": [],
+    "uri": "trainTicketBooking.feature",
+    "elements": [
+      {
+        "id": "booking-train-tickets-feature;train-ticket-booking-with-entering-from,-to-details,-depart,-and-return-dates",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Train ticket booking with entering From, To details, Depart, and Return dates",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User is on the buy-tickets page",
+            "result": {
+              "status": "passed",
+              "duration": 1298000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "From",
+                      "To"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Lagos",
+                      "Porto Campanha"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User enters From and To details",
+            "result": {
+              "status": "passed",
+              "duration": 1128000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User enters on date and return date",
+            "result": {
+              "status": "passed",
+              "duration": 319000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User clicks on the Submit",
+            "result": {
+              "status": "passed",
+              "duration": 1507000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "User navigates to Online-Ticket-Office page",
+            "result": {
+              "status": "passed",
+              "duration": 466000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "User entered journey details for From and To is correct",
+            "result": {
+              "status": "passed",
+              "duration": 658000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
