@@ -22,7 +22,7 @@
             "name": "User is on the buy-tickets page",
             "result": {
               "status": "passed",
-              "duration": 1298000000
+              "duration": 711000000
             }
           },
           {
@@ -49,7 +49,7 @@
             "name": "User enters From and To details",
             "result": {
               "status": "passed",
-              "duration": 1128000000
+              "duration": 1109000000
             }
           },
           {
@@ -59,7 +59,7 @@
             "name": "User enters on date and return date",
             "result": {
               "status": "passed",
-              "duration": 319000000
+              "duration": 320000000
             }
           },
           {
@@ -69,7 +69,7 @@
             "name": "User clicks on the Submit",
             "result": {
               "status": "passed",
-              "duration": 1507000000
+              "duration": 1011000000
             }
           },
           {
@@ -79,7 +79,7 @@
             "name": "User navigates to Online-Ticket-Office page",
             "result": {
               "status": "passed",
-              "duration": 466000000
+              "duration": 187000000
             }
           },
           {
@@ -89,7 +89,7 @@
             "name": "User entered journey details for From and To is correct",
             "result": {
               "status": "passed",
-              "duration": 658000000
+              "duration": 733000000
             }
           }
         ]
