@@ -58,16 +58,21 @@ Then(/^User navigates to Online-Ticket-Office page$/, function () {
 });
 
 
-Then(/^User entered journey details for From and To is correct$/, function() {
+Then(/^User entered journey details for From and To are saved correctly$/, function() {
 
-    var day3 = Number(`${day}`) + 3;
-    var day5 = Number(`${day}`) + 5;
+
     cy.get(buytrainticketspage.getFromField()).should('have.value', this.data.From)
     cy.get(buytrainticketspage.getToField()).should('have.value', this.data.To)
-    cy.get('input[name="departDate"]').should('have.value', `${day3}`+" May, 2025")
-    cy.get('input[name="returnDate"]').should('have.value', `${day5}`+" May, 2025")
 
 	
+});
+
+
+Then(/^User entered Depart date and Return date are saved correctly$/, () => {
+    var day3 = Number(`${day}`) + 3;
+    var day5 = Number(`${day}`) + 5;
+    cy.get('input[name="departDate"]').should('have.value', `${day3}`+" May, 2025")
+    cy.get('input[name="returnDate"]').should('have.value', `${day5}`+" May, 2025")
 });
 
 

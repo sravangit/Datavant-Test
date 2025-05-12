@@ -8,4 +8,5 @@ When User enters From and To details
 And User enters on date and return date
 And User clicks on the Submit
 Then User navigates to Online-Ticket-Office page
-And User entered journey details for From and To is correct
+And User entered journey details for From and To are saved correctly
+And User entered Depart date and Return date are saved correctly
