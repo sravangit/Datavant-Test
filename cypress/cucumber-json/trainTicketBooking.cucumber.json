@@ -22,7 +22,7 @@
             "name": "User is on the buy-tickets page",
             "result": {
               "status": "passed",
-              "duration": 1303000000
+              "duration": 1708000000
             }
           },
           {
@@ -49,7 +49,7 @@
             "name": "User enters From and To details",
             "result": {
               "status": "passed",
-              "duration": 1079000000
+              "duration": 1127000000
             }
           },
           {
@@ -59,47 +59,37 @@
             "name": "User enters on date and return date",
             "result": {
               "status": "passed",
-              "duration": 310000000
+              "duration": 331000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 9,
-            "name": "User clicks on the Submit",
+            "name": "User clicks on the Submit to navigate to Online-Ticket-Office page",
             "result": {
               "status": "passed",
-              "duration": 1984000000
+              "duration": 2019000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 10,
-            "name": "User navigates to Online-Ticket-Office page",
+            "name": "User entered journey details for From and To are saved correctly",
             "result": {
               "status": "passed",
-              "duration": 959000000
+              "duration": 731000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 11,
-            "name": "User entered journey details for From and To are saved correctly",
-            "result": {
-              "status": "passed",
-              "duration": 685000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
             "name": "User entered Depart date and Return date are saved correctly",
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 10000000
             }
           }
         ]

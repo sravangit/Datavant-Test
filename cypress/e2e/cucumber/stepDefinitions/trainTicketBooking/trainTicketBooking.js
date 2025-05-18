@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps'
+import { Given, When, Then, And } from 'cypress-cucumber-preprocessor/steps'
 import basepage from '../../../pages/basepage';
 import buytrainticketspage from '../../../pages/buytrainticketspage';
 
@@ -13,12 +13,6 @@ before('set login details', function () {
     })
 
 })
-
-
-Given(/^User is on the tickets page$/, () => {
-	return true;
-});
-
 
 
 Given(/^User is on the buy-tickets page$/, function () {
@@ -42,14 +36,11 @@ When(/^User enters on date and return date$/, function () {
 
 });
 
-When(/^User clicks on the Submit$/, function () {
+When(/^User clicks on the Submit to navigate to Online-Ticket-Office page$/, function () {
      buytrainticketspage.clickSubmitButton();
 
-});
-
-Then(/^User navigates to Online-Ticket-Office page$/, function () {
-
-    cy.origin('https://venda.cp.pt/',  ()=> {
+     cy.origin('https://venda.cp.pt/',  ()=> {
+        cy.title().should('include', 'Online Ticket Office | CP - Comboios de Portugal');
         const {OnlineTicketOfficePage} = Cypress.require('../../../pages/onlineticketofficepage')
         const onlineticketofficepage = new OnlineTicketOfficePage()
         onlineticketofficepage.clickCancelButton()
@@ -59,7 +50,6 @@ Then(/^User navigates to Online-Ticket-Office page$/, function () {
 
 
 Then(/^User entered journey details for From and To are saved correctly$/, function() {
-
 
     cy.get(buytrainticketspage.getFromField()).should('have.value', this.data.From)
     cy.get(buytrainticketspage.getToField()).should('have.value', this.data.To)
