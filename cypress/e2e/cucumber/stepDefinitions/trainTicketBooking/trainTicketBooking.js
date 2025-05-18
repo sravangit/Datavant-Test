@@ -38,14 +38,18 @@ When(/^User enters on date and return date$/, function () {
 
 When(/^User clicks on the Submit to navigate to Online-Ticket-Office page$/, function () {
      buytrainticketspage.clickSubmitButton();
-
-     cy.origin('https://venda.cp.pt/',  ()=> {
+     cy.origin(this.data.newDomain,  ()=> {
         cy.title().should('include', 'Online Ticket Office | CP - Comboios de Portugal');
+    })
+
+});
+
+When(/^user clicks on the cancel button$/, function() {
+    cy.origin(this.data.newDomain,  ()=> {
         const {OnlineTicketOfficePage} = Cypress.require('../../../pages/onlineticketofficepage')
         const onlineticketofficepage = new OnlineTicketOfficePage()
         onlineticketofficepage.clickCancelButton()
     })
-
 });
 
 

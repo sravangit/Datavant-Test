@@ -22,7 +22,7 @@
             "name": "User is on the buy-tickets page",
             "result": {
               "status": "passed",
-              "duration": 1708000000
+              "duration": 1347000000
             }
           },
           {
@@ -49,7 +49,7 @@
             "name": "User enters From and To details",
             "result": {
               "status": "passed",
-              "duration": 1127000000
+              "duration": 1114000000
             }
           },
           {
@@ -69,27 +69,37 @@
             "name": "User clicks on the Submit to navigate to Online-Ticket-Office page",
             "result": {
               "status": "passed",
-              "duration": 2019000000
+              "duration": 1961000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "When ",
             "line": 10,
-            "name": "User entered journey details for From and To are saved correctly",
+            "name": "user clicks on the cancel button",
             "result": {
               "status": "passed",
-              "duration": 731000000
+              "duration": 139000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 11,
+            "name": "User entered journey details for From and To are saved correctly",
+            "result": {
+              "status": "passed",
+              "duration": 659000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
             "name": "User entered Depart date and Return date are saved correctly",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 9000000
             }
           }
         ]
